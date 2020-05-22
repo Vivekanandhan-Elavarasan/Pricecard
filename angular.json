@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Pricecard"
+    }
+  },
+  "defaultProject": "Pricecard",
+  "cli": {
+    "analytics": "39bb8046-f47b-4279-afd8-a6a1c1449935"
+  }
 }

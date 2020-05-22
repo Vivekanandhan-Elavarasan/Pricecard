@@ -1,0 +1,25 @@
+>
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">{{cardData.type}}</h5>
+            <h6 class="card-price text-center">${{cardData.price}}<span class="period">{{cardData.period}}</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li *ngFor="let item of cardData.list"  [ngClass]="{'text-muted':!item.isAvailable}">
+                  <span>
+                    
+                 
+                  <span *ngIf="!item.highlight">
+                    <fa-icon [icon]="faCheck" *ngIf="item.isAvailable"></fa-icon>
+                    <fa-icon [icon]="faTimes" *ngIf="!item.isAvailable"></fa-icon>
+                    {{item.title}}</span>
+                  <span *ngIf="item.highlight"><strong> <fa-icon [icon]="faCheck" *ngIf="item.isAvailable"></fa-icon>{{item.title}}</strong></span>
+                </span>
+            </li>
+
+
+             
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+          </div>
+        </div>
